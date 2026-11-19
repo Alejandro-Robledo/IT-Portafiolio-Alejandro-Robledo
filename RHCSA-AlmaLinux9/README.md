@@ -1,86 +1,71 @@
-# RHCSA Lab — AlmaLinux 9
+# 01 - Fundamentos de Linux
 
-## Overview
+## Objetivo
 
-This repository documents my practical training in Linux system administration using AlmaLinux 9 and a virtualized laboratory environment.
+En esta sección se documentan las prácticas relacionadas con los fundamentos del sistema operativo Linux, utilizando AlmaLinux 9 como entorno de aprendizaje.
 
-The main objective is to develop hands-on skills in Linux administration, system configuration, networking, storage management, security, troubleshooting and automation, following the Red Hat Enterprise Linux 9 administration objectives.
+El objetivo es comprender la estructura del sistema, familiarizarse con la terminal Bash y desarrollar habilidades para administrar archivos, directorios y recursos básicos del sistema desde la línea de comandos.
 
-This project is part of my IT professional development and practical portfolio.
+## Contenidos
 
-## Lab Environment
+A lo largo de este módulo trabajaremos los siguientes temas:
 
-| Component | Configuration |
-|---|---|
-| Host OS | Windows |
-| Virtualization | Oracle VirtualBox |
-| Provisioning | Vagrant |
-| Linux Distribution | AlmaLinux 9.9 |
-| Server VM | RHCSA-server-lab-new |
-| Client VM | RHCSA-client-lab-new |
-| Server RAM | 2 GB |
-| Client RAM | 1 GB |
-| Server disk | 19.5 GB |
-| Client disk | 19.5 GB |
+1. **Estructura del sistema de archivos**
+   - Jerarquía de directorios Linux.
+   - Función de los directorios principales.
+   - Diferencias entre `/root`, `/home`, `/etc`, `/var`, `/usr` y `/boot`.
 
-## Network Configuration
+2. **Terminal y comandos esenciales**
+   - Introducción a Bash.
+   - Navegación entre directorios.
+   - Rutas absolutas y relativas.
+   - Comandos básicos de administración.
 
-The laboratory uses two network interfaces per virtual machine:
+3. **Gestión de archivos y directorios**
+   - Creación, modificación y eliminación.
+   - Copia y movimiento de archivos.
+   - Visualización de contenido.
+   - Identificación de tipos y propiedades.
 
-- NAT: Internet connectivity.
-- Host-Only: Private communication between the host and virtual machines.
+4. **Búsqueda y procesamiento de información**
+   - Búsqueda de archivos y directorios.
+   - Uso de filtros y tuberías.
+   - Redirección de entrada y salida.
+   - Procesamiento de texto.
 
-| Machine | Host-Only IP |
-|---|---|
-| Host | 192.168.56.1 |
-| Server | 192.168.56.10 |
-| Client | 192.168.56.11 |
+5. **Compresión y archivado**
+   - Creación y extracción de archivos comprimidos.
+   - Administración de archivos TAR.
+   - Herramientas de compresión en Linux.
 
-## Initial System Verification
+6. **Documentación y ayuda del sistema**
+   - Páginas de manual.
+   - Comandos de ayuda.
+   - Consulta de documentación desde la terminal.
 
-The initial inspection confirmed:
+## Entorno de prácticas
 
-- Both virtual machines are running successfully.
-- AlmaLinux 9.9 is installed on both machines.
-- Both systems use the Linux 5.14 kernel.
-- Network interfaces are active.
-- Main disks are detected correctly.
-- System resources are available.
+- Sistema operativo: AlmaLinux 9.9.
+- Virtualización: Oracle VirtualBox.
+- Aprovisionamiento: Vagrant.
+- Máquinas virtuales: servidor y cliente.
 
-### Initial observations
+## Metodología
 
-The following service was reported as failed on both virtual machines:
+Cada práctica incluirá:
 
-`NetworkManager-wait-online.service`
+- Objetivo del ejercicio.
+- Explicación de los conceptos técnicos.
+- Comandos utilizados y su funcionamiento.
+- Procedimiento paso a paso.
+- Resultados y verificaciones.
+- Capturas reales del laboratorio.
+- Problemas encontrados y soluciones.
 
-This issue is pending investigation and will be addressed during the networking module.
+## Objetivo de aprendizaje
 
-## Learning Roadmap
+Adquirir una base sólida en el uso y administración de Linux, desarrollando las habilidades necesarias para avanzar hacia tareas de administración de sistemas y preparación para la certificación RHCSA.
 
-1. Linux Fundamentals and Filesystem Hierarchy
-2. Users, Groups and Permissions
-3. Process and Service Management
-4. Storage and Filesystem Administration
-5. Network Configuration and Troubleshooting
-6. Package Management and System Services
-7. Linux Security: SELinux and Firewalld
-8. Bash Scripting and Automation
-9. Integrated Administration Exercises and RHCSA Practice
+---
 
-## Documentation Methodology
-
-Each practical exercise will include:
-
-- Objectives and technical concepts.
-- Commands and configuration procedures.
-- Practical results and verification.
-- Screenshots and supporting evidence.
-- Troubleshooting notes.
-- Conclusions and lessons learned.
-
-All screenshots and results will come from actual laboratory exercises.
-
-## Project Status
-
-**Current stage:** Initial laboratory verification completed.  
-**Next step:** Linux filesystem hierarchy and essential command-line tools.
+**Estado:** En desarrollo.
